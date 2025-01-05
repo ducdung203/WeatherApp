@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+/* General container style */
+.container {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Title style */
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* TextField style */
+.textField {
+  margin-bottom: 20px;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Button style */
+.button {
+  background-color: #1976d2;
   color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  &:hover {
+    background-color: #1565c0;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+/* Loading spinner style */
+.spinner {
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Weather info box */
+.weather-info {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Weather info text */
+.weather-info h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.weather-info p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Error message style */
+.error-message {
+  color: red;
+  font-weight: bold;
 }
